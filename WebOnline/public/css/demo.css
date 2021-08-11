@@ -1,0 +1,26 @@
+.slider {
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow-x: auto;
+  }
+  .slide {
+    width: 100%;
+    flex-shrink: 0;
+    height: 100%;
+  }
+  .slider {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  
+    -webkit-scroll-snap-points-x: repeat(300px);
+        -ms-scroll-snap-points-x: repeat(300px);
+            scroll-snap-points-x: repeat(300px);
+    -webkit-scroll-snap-type: mandatory;
+        -ms-scroll-snap-type: mandatory;
+            scroll-snap-type: mandatory;        
+  }
+  .slides > div:target {
+    transform: scale(0.8);
+  }
